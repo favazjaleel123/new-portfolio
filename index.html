@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Favaz A-PORTFOLIO</title>
+
+</head>
+
+<body>
+
+
+
+  
+
+  <header>
+
+    <nav>
+
+      <div class="left">
+
+        <h1>WELCOME TO MY PORTFOLIO</h1>
+
+      </div>
+
+      <div class="right">
+
+        <ul>
+
+          <li><a href="#HOME">HOME</a></li>
+
+          <li><a href="#ABOUT">ABOUT</a></li>
+
+          <li><a href="#PROJECT">PROJECTS</a></li>
+
+          <li><a href="#CONTACT">CONTACT</a></li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+
+  
+
+  <section id="HOME">
+
+    <div class="container">
+
+      <div class="leftcontain">
+
+        <h2>HI, I'M FAVAZ</h2>
+
+        <span id="element"></span>
+     
+      <p>  I am passionate about building practical projects and learning modern technologies. I love collaborating with peers and taking part in hackathons and college events to sharpen my skills.</p>
+
+      </div>
+
+      <div class="rightcontainer">
+
+        <img src="image.jpg/WhatsApp Image 2025-09-30 at 20.44.00_4c8e8f85.jpg" alt="Profile Image">
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+
+
+  <section id="ABOUT">
+
+    <h2>About Me</h2>
+
+    <p><ul>
+        <li>My name is Favaz A from Karunagapally, Kollam.</li>
+          <li>I am currently pursuing B.Tech in Computer Science at IHRD College of Engineering, Karunagapally.</li>
+          <li>I actively explore AI and web development through campus clubs (ThinkerHub, IEEE, μLearn, GDG).</li>
+          <li>I serve as an NSS volunteer and enjoy contributing to community programs.</li>
+        </ul></p>
+
+  </section>
+
+
+
+  
+
+  <section id="PROJECT">
+
+    <h2>My Projects</h2>
+
+    <p>Not yet. some thing big is coming...</p>
+
+  </section>
+
+
+
+
+
+  <section id="CONTACT">
+
+    <h2>Contact</h2>
+
+    <p>Email: favazjaleel.com</p>
+    <p>linkedin: https://www.linkedin.com/in/favaz-a-</p>
+    <p>phone: 9847081146</p>
+    <p>Instagram id: favaz_abdul_jaleel</p>
+
+  </section>
+
+
+
+  
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <script>
+
+    var typed = new Typed('#element', {
+
+      strings: ['A Passionate Developer', 'A Creative Designer', 'An Enthusiastic Learner'],
+
+      typeSpeed: 50,
+
+      backSpeed: 25,
+
+      loop: true
+
+    });
+
+  </script>
+
+
+
+</body>
+
+</html>
+<style>
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+:root{
+  --bg: #f5f8ff;
+  --accent: #0ea5a0; /* teal-ish */
+  --accent-2: #0369a1; /* deep blue */
+  --text: #0f172a;
+  --muted: #475569;
+  --card: #ffffff;
+  --glass: rgba(255,255,255,0.6);
+  --radius: 14px;
+  --container-width: 1100px;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,body{
+  height: 100%;
+  font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background: linear-gradient(180deg, var(--bg), #eaf2ff 60%);
+  color: var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+
+header{
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  backdrop-filter: blur(6px);
+  background: linear-gradient(90deg, rgba(255,255,255,0.6), rgba(255,255,255,0.35));
+  border-bottom: 1px solid rgba(15,23,42,0.04);
+}
+
+nav{
+  max-width: var(--container-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+}
+
+nav .left h1{
+  font-size: 1.05rem;
+  letter-spacing: 0.6px;
+  color: var(--accent-2);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+nav .right ul{
+  list-style: none;
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+nav .right ul li{
+  margin: 0;
+}
+
+nav .right a{
+  display: inline-block;
+  padding: 0.5rem 0.85rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 600;
+  transition: all 180ms ease;
+  font-size: 0.92rem;
+}
+
+nav .right a:hover{
+  transform: translateY(-2px);
+  color: var(--accent-2);
+  background: rgba(3,105,161,0.06);
+  box-shadow: 0 6px 18px rgba(3,105,161,0.04);
+}
+
+/* HERO / HOME SECTION */
+section#HOME{
+  padding: 3.25rem 1rem;
+}
+
+.container{
+  max-width: var(--container-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 2.25rem;
+  padding: 1.5rem;
+}
+
+
+.leftcontain{
+  flex: 1;
+  min-width: 260px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(250,250,255,0.85));
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: 0 12px 30px rgba(3,7,18,0.06);
+  backdrop-filter: blur(6px);
+}
+
+.leftcontain h2{
+  font-size: 2rem;
+  margin-bottom: 0.45rem;
+  color: var(--accent-2);
+  letter-spacing: -0.5px;
+}
+
+.leftcontain p{
+  color: var(--muted);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+
+#element{
+  display: inline-block;
+  margin-top: 0.4rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+
+.rightcontainer{
+  width: 320px;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  overflow: hidden;
+  flex-shrink: 0;
+  box-shadow: 0 18px 40px rgba(2,6,23,0.08);
+  background: linear-gradient(135deg, rgba(3,105,161,0.06), rgba(14,165,160,0.02));
+}
+
+.rightcontainer img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+section{
+  padding: 3rem 1rem;
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+section h2{
+  font-size: 1.45rem;
+  margin-bottom: 0.6rem;
+  color: var(--accent-2);
+}
+
+section p{
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+
+.projects-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.project-card{
+  background: var(--card);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 10px 24px rgba(15,23,42,0.04);
+}
+
+.project-card h3{
+  margin-bottom: 0.4rem;
+  font-size: 1.03rem;
+}
+
+
+.contact-grid{
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+
+footer{
+  text-align: center;
+  padding: 1.25rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 980px){
+  .container{
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .rightcontainer{
+    width: 260px;
+    height: 260px;
+  }
+  .projects-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contact-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 680px){
+  nav{
+    padding: 0.75rem 1rem;
+  }
+  nav .left h1{
+    font-size: 0.95rem;
+  }
+  nav .right ul{
+    gap: 0.5rem;
+    overflow-x: auto;
+  }
+  .container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .leftcontain{
+    width: 100%;
+    padding: 1.25rem;
+    text-align: center;
+  }
+  .leftcontain h2{
+    font-size: 1.6rem;
+  }
+  .rightcontainer{
+    width: 220px;
+    height: 220px;
+    margin-top: 1rem;
+  }
+  .projects-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+</style>
